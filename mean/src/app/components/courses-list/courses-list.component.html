@@ -1,0 +1,60 @@
+<div class="list row">
+  <div class="col-md-8">
+    <div class="container">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by title"
+          [(ngModel)]="title"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchTitle()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container table-responsive">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+
+            <th scope="col">Image</th>
+            <th scope="col">Titre</th>
+            <th scope="col">Categorie</th>
+            <th scope="col">Description</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tutorial of currentTutorial; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+
+            <td>
+              <img
+                height="100"
+                width="100"
+                [src]="'../../../assets/uploads/' + tutorial.img"
+              />
+            </td>
+            <td>{{ tutorial.titre }}</td>
+            <td>{{ tutorial.categorie }}</td>
+            <td>{{ tutorial.description }}</td>
+
+            <td>
+              <a class="badge badge-warning" (click)="modifier(tutorial)">
+                Edit
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

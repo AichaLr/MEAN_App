@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@media (max-width: 360px) {
+  .navbar {
+    width: 100vh;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 100vh;
+  }
+}

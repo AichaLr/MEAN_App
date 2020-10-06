@@ -1,0 +1,62 @@
+img {
+  object-fit: cover;
+}
+.card {
+  display: flex;
+}
+
+@media (max-width: 560px) {
+  .table {
+    width: 73%;
+  }
+
+  label {
+    background-color: aqua;
+  }
+  table td {
+    padding: 2px;
+  }
+}
+@media (min-width: 290px) {
+  .table {
+    width: 100%;
+  }
+
+  label {
+    background-color: aqua;
+  }
+  table td {
+    padding: 2px;
+  }
+}
+@media (min-width: 560px) {
+  .table {
+    width: 100%;
+    box-sizing: inherit;
+  }
+  table td {
+    width: 100%;
+  }
+  label {
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 768px) {
+  table td {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .table {
+    width: 73%;
+  }
+
+  label {
+    background-color: aqua;
+  }
+  table td {
+    padding: 0;
+  }
+}
