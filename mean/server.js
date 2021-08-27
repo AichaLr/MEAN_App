@@ -155,6 +155,9 @@ app.get("/courses/:id", function (req, res) {
   });
 });
 
+
+
+
 app.put("/update/:id", function (req, res) {
   cours.findByIdAndUpdate(
     req.params.id,
@@ -171,7 +174,7 @@ app.put("/update/:id", function (req, res) {
         res.send(error);
       } else {
         res.json(data);
-        console.log("Data updated successfully");
+        console.log("Data updated successfully yaay !");
       }
     }
   );
